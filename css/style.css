@@ -19,7 +19,7 @@ a {
 h1,
 h2,
 h3 {
-    padding-bottom: 20px;
+    padding: 10px 0;
 }
 p {
     margin: 10px;
@@ -27,7 +27,7 @@ p {
 /* Apply some responsive rule */
 .container {
     margin: auto;
-    max-width: 1100px;
+    max-width: 1200px;
     overflow: auto;
     padding: 0 20px;
 }
@@ -39,16 +39,15 @@ p {
     box-shadow: 5px 5px 10px gray;
 }
 #navbar .logo{
-    width: 100px;
+    width: 70px;
     float: left;
 }
 .rp{
-    margin-left: 120px;
-    padding-top: 5px;
-    line-height: 1em;
+    margin-left: 100px;
+    line-height: 1.2em;
 }
 #navbar .top{
-    margin-top: 30px;;
+    margin-top: 15px;;
 }
 #navbar a {
     color:rgb(1, 1, 153);
@@ -81,9 +80,10 @@ p {
 #navbar ul li a.active {
     background: rgba(50, 51, 48, 0.1);
 }
+
 .cover{
-    background: url(../image/cover.png) no-repeat center center/cover;
-    height: 700px;
+    background: url(../image/cover.jpg) no-repeat center center/cover;
+    height: 650px;
     background-color: rgb(192, 211, 247);
     margin-top: 5px;
 }
@@ -100,18 +100,25 @@ p {
 }
 
 img{
-    width: 250px;
-    box-shadow: 5px 5px 10px;
+    box-shadow: .3px .3px 2px;
 }
 h1{
     float: left;
     clear: both;
 }
 .lu{
-    margin-left: 750px;
+    margin-left: 800px;
     line-height: .5em;
 }
 #blue{
     color: blue;
 }
 
+.ilyelyu{
+    width: 300px;
+    margin-left: 80px;
+}
+.video-content h1{
+    background: linear-gradient(violet, skyblue);
+    padding: 5px 16rem;
+}
