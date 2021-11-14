@@ -1,0 +1,117 @@
+/* global setting */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* global styling */
+html
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5em; /* 1em = 2inches */
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+h1,
+h2,
+h3 {
+    padding-bottom: 20px;
+}
+p {
+    margin: 10px;
+}
+/* Apply some responsive rule */
+.container {
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+}
+/* Navigation */
+#navbar {
+    background: white;
+    overflow: hidden;
+    color: rgb(2, 2, 2);
+    box-shadow: 5px 5px 10px gray;
+}
+#navbar .logo{
+    width: 100px;
+    float: left;
+}
+.rp{
+    margin-left: 120px;
+    padding-top: 5px;
+    line-height: 1em;
+}
+#navbar .top{
+    margin-top: 30px;;
+}
+#navbar a {
+    color:rgb(1, 1, 153);
+}
+/* removing the bullets in the list */
+#navbar ul {
+    list-style: none;
+    /* float: right; */
+}
+/* float list items in the left to have them horizontally align */
+#navbar ul li {
+    float: left;
+}
+/* convert anchor link to block elements to appl some padding */
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+}
+#navbar h1 {
+    float: left;
+    padding-top: 20px;
+}
+
+/* Navigation using pseudo selector */
+#navbar ul li a:hover {
+    background: rgb(248, 248, 177);
+    color: maroon;
+}
+
+#navbar ul li a.active {
+    background: rgba(50, 51, 48, 0.1);
+}
+.cover{
+    background: url(../image/cover.png) no-repeat center center/cover;
+    height: 700px;
+    background-color: rgb(192, 211, 247);
+    margin-top: 5px;
+}
+.video-content{
+    max-width: 1100;
+    width: auto;
+}
+.video{
+    float: left;
+    height: 400px;
+    max-width: 1100;
+    width: auto;
+
+}
+
+img{
+    width: 250px;
+    box-shadow: 5px 5px 10px;
+}
+h1{
+    float: left;
+    clear: both;
+}
+.lu{
+    margin-left: 750px;
+    line-height: .5em;
+}
+#blue{
+    color: blue;
+}
+
