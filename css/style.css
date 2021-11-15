@@ -27,7 +27,7 @@ p {
 /* Apply some responsive rule */
 .container {
     margin: auto;
-    max-width: 1200px;
+    max-width: auto;
     overflow: auto;
     padding: 0 20px;
 }
@@ -38,7 +38,11 @@ p {
     color: rgb(2, 2, 2);
     box-shadow: 5px 5px 10px gray;
 }
-#navbar .logo{
+#republic{
+    overflow: hidden;
+    color: rgb(2, 2, 2);
+}
+#republic .logo{
     width: 70px;
     float: left;
 }
@@ -46,7 +50,7 @@ p {
     margin-left: 100px;
     line-height: 1.2em;
 }
-#navbar .top{
+#republic .top{
     margin-top: 15px;;
 }
 #navbar a {
@@ -59,12 +63,12 @@ p {
 }
 /* float list items in the left to have them horizontally align */
 #navbar ul li {
-    float: left;
+    float: right;
 }
 /* convert anchor link to block elements to appl some padding */
 #navbar ul li a {
     display: block;
-    padding: 20px;
+    padding: 31px 20px;
 }
 #navbar h1 {
     float: left;
@@ -83,20 +87,23 @@ p {
 
 .cover{
     background: url(../image/cover.jpg) no-repeat center center/cover;
-    height: 650px;
-    background-color: rgb(192, 211, 247);
+    height: 780px;
+    background-color: rgrgb(209, 229, 248);
     margin-top: 5px;
 }
 .video-content{
     max-width: 1100;
     width: auto;
+    background: linear-gradient(rgb(228, 225, 225), rgb(209, 229, 248));
+    margin-top: 20px;
+    padding-bottom: 30px;
+    box-shadow: -0 -20px rgb(209, 229, 248);
 }
 .video{
     float: left;
-    height: 400px;
+    height: 470px;
     max-width: 1100;
     width: auto;
-
 }
 
 img{
@@ -107,7 +114,7 @@ h1{
     clear: both;
 }
 .lu{
-    margin-left: 800px;
+    margin-left: 940px;
     line-height: .5em;
 }
 #blue{
@@ -115,10 +122,11 @@ h1{
 }
 
 .ilyelyu{
-    width: 300px;
-    margin-left: 80px;
+    width: 350px;
+    margin-left: 95px;
+    margin-top: 32px;
 }
 .video-content h1{
-    background: linear-gradient(violet, skyblue);
-    padding: 5px 16rem;
+    background: linear-gradient(rgb(228, 225, 225), rgb(209, 229, 248));
+    padding: 5px 19.95rem;
 }
