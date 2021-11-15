@@ -161,53 +161,53 @@ h1 {
 }
 .spot_photo-1 {
   margin-top: 10%;
-  left: 1%;
+  left: 1.1%;
   z-index: 1;
 }
 .spot_photo-2 {
   margin-top: 13%;
-  left: 10%;
+  left: 9.8%;
   z-index: 2;
 }
 .spot_photo-3 {
   margin-top: 16%;
-  left: 19%;
+  left: 18.5%;
   z-index: 3;
 }
 .spot_photo-4 {
   margin-top: 19%;
-  left: 28%;
+  left: 27.2%;
   z-index: 4;
 }
 .spot_photo-5 {
   margin-top: 22%;
-  left: 37%;
+  left: 35.9%;
 }
 .spot_photo-6 {
   margin-top: 19%;
-  left: 46%;
+  left: 44.6%;
   z-index: 4;
 }
 .spot_photo-7 {
   margin-top: 16%;
-  left: 55%;
+  left: 53.3%;
   z-index: 3;
 }
 .spot_photo-8 {
   margin-top: 13%;
-  left: 64%;
+  left: 62%;
   z-index: 2;
 }
 .spot_photo-9 {
   margin-top: 10%;
-  left: 73%;
+  left: 70.7%;
   z-index: 1;
 }
 .spot_photo:hover {
   outline: 5px solid #fff;
   transform: scale(1.05) translateY(-20px);
   z-index: 20;
-  box-shadow: -10px -10px 25px;
+  box-shadow: -10px -10px 25px lightblue;
 }
 .spot:hover .spot_photo:not(:hover) {
   transform: scale(0.9);
