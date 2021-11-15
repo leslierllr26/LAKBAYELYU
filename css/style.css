@@ -1,132 +1,214 @@
 /* global setting */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /* global styling */
-html
-body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 1.5em; /* 1em = 2inches */
+html body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  line-height: 1.5em; /* 1em = 2inches */
 }
 
 a {
-    color: #333;
-    text-decoration: none;
+  color: #333;
+  text-decoration: none;
 }
 h1,
 h2,
 h3 {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 p {
-    margin: 10px;
+  margin: 10px;
 }
 /* Apply some responsive rule */
 .container {
-    margin: auto;
-    max-width: auto;
-    overflow: auto;
-    padding: 0 20px;
+  margin: auto;
+  max-width: auto;
+  overflow: auto;
+  padding: 0 20px;
 }
 /* Navigation */
 #navbar {
-    background: white;
-    overflow: hidden;
-    color: rgb(2, 2, 2);
-    box-shadow: 5px 5px 10px gray;
+  background: white;
+  overflow: hidden;
+  color: rgb(2, 2, 2);
+  box-shadow: 5px 5px 10px gray;
 }
-#republic{
-    overflow: hidden;
-    color: rgb(2, 2, 2);
+#republic {
+  overflow: hidden;
+  color: rgb(2, 2, 2);
 }
-#republic .logo{
-    width: 70px;
-    float: left;
+#republic .logo {
+  width: 70px;
+  float: left;
 }
-.rp{
-    margin-left: 100px;
-    line-height: 1.2em;
+.rp {
+  margin-left: 100px;
+  line-height: 1.2em;
 }
-#republic .top{
-    margin-top: 15px;;
+#republic .top {
+  margin-top: 15px;
+  text-decoration-line: underline;
 }
 #navbar a {
-    color:rgb(1, 1, 153);
+  color: rgb(1, 1, 153);
 }
 /* removing the bullets in the list */
 #navbar ul {
-    list-style: none;
-    /* float: right; */
+  list-style: none;
+  /* float: right; */
 }
 /* float list items in the left to have them horizontally align */
 #navbar ul li {
-    float: right;
+  float: right;
 }
 /* convert anchor link to block elements to appl some padding */
 #navbar ul li a {
-    display: block;
-    padding: 31px 20px;
+  display: block;
+  padding: 31px 20px;
 }
 #navbar h1 {
-    float: left;
-    padding-top: 20px;
+  float: left;
+  padding-top: 20px;
 }
 
 /* Navigation using pseudo selector */
 #navbar ul li a:hover {
-    background: rgb(248, 248, 177);
-    color: maroon;
+  background: rgb(248, 248, 177);
+  color: maroon;
 }
 
 #navbar ul li a.active {
-    background: rgba(50, 51, 48, 0.1);
+  background: rgba(50, 51, 48, 0.1);
 }
 
-.cover{
-    background: url(../image/cover.jpg) no-repeat center center/cover;
-    height: 780px;
-    background-color: rgrgb(209, 229, 248);
-    margin-top: 5px;
+.cover {
+  background: url(../image/cover.jpg) no-repeat center center/cover;
+  height: 780px;
+  background-color: rgrgb(209, 229, 248);
+  margin-top: 5px;
 }
-.video-content{
-    max-width: 1100;
-    width: auto;
-    background: linear-gradient(rgb(228, 225, 225), rgb(209, 229, 248));
-    margin-top: 20px;
-    padding-bottom: 30px;
-    box-shadow: -0 -20px rgb(209, 229, 248);
+.video-content {
+  max-width: 1100;
+  width: auto;
+  background: linear-gradient(rgb(228, 225, 225), rgb(209, 229, 248));
+  margin-top: 20px;
+  padding-bottom: 30px;
+  box-shadow: -0 -20px rgb(209, 229, 248);
 }
-.video{
-    float: left;
-    height: 470px;
-    max-width: 1100;
-    width: auto;
-}
-
-img{
-    box-shadow: .3px .3px 2px;
-}
-h1{
-    float: left;
-    clear: both;
-}
-.lu{
-    margin-left: 940px;
-    line-height: .5em;
-}
-#blue{
-    color: blue;
+.video {
+  float: left;
+  height: 470px;
+  max-width: 1100;
+  width: auto;
 }
 
-.ilyelyu{
-    width: 350px;
-    margin-left: 95px;
-    margin-top: 32px;
+img {
+  box-shadow: 0.3px 0.3px 2px;
 }
-.video-content h1{
-    background: linear-gradient(rgb(228, 225, 225), rgb(209, 229, 248));
-    padding: 5px 19.95rem;
+h1 {
+  float: left;
+  clear: both;
+}
+.lu {
+  margin-left: 940px;
+  line-height: 0.5em;
+}
+#blue {
+  color: blue;
+}
+
+.ilyelyu {
+  width: 350px;
+  margin-left: 95px;
+  margin-top: 32px;
+}
+.video-content h1 {
+  background: linear-gradient(rgb(228, 225, 225), rgb(209, 229, 248));
+  padding: 5px 19.95rem;
+}
+
+.sec {
+  height: 700px;
+  padding-top: 50px;
+  background-color: #131313;
+  margin: auto;
+  max-width: auto;
+  overflow: auto;
+  padding: 0 20px;
+}
+.spot {
+  width: auto;
+  margin: 0 auto;
+}
+.spot_photo {
+  width: 400px;
+  height: 250px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  z-index: 10;
+  transition: all 0.2s;
+}
+.ts h1 {
+  color: #14addc;
+  text-transform: uppercase;
+  padding-bottom: 65px;
+  letter-spacing: 5px;
+}
+.spot_photo-1 {
+  margin-top: 10%;
+  left: 1%;
+  z-index: 1;
+}
+.spot_photo-2 {
+  margin-top: 13%;
+  left: 10%;
+  z-index: 2;
+}
+.spot_photo-3 {
+  margin-top: 16%;
+  left: 19%;
+  z-index: 3;
+}
+.spot_photo-4 {
+  margin-top: 19%;
+  left: 28%;
+  z-index: 4;
+}
+.spot_photo-5 {
+  margin-top: 22%;
+  left: 37%;
+}
+.spot_photo-6 {
+  margin-top: 19%;
+  left: 46%;
+  z-index: 4;
+}
+.spot_photo-7 {
+  margin-top: 16%;
+  left: 55%;
+  z-index: 3;
+}
+.spot_photo-8 {
+  margin-top: 13%;
+  left: 64%;
+  z-index: 2;
+}
+.spot_photo-9 {
+  margin-top: 10%;
+  left: 73%;
+  z-index: 1;
+}
+.spot_photo:hover {
+  outline: 5px solid #fff;
+  transform: scale(1.05) translateY(-20px);
+  z-index: 20;
+  box-shadow: -10px -10px 25px;
+}
+.spot:hover .spot_photo:not(:hover) {
+  transform: scale(0.9);
 }
