@@ -21,9 +21,9 @@ h2,
 h3 {
   padding: 10px 0;
 }
-p {
+/* p {
   margin: 10px;
-}
+} */
 /* Apply some responsive rule */
 .container {
   margin: auto;
@@ -96,9 +96,9 @@ p {
   max-width: 1100;
   width: auto;
   background: linear-gradient(rgb(228, 225, 225), rgb(209, 229, 248));
-  margin-top: 20px;
+  margin-top: 5px;
   padding-bottom: 30px;
-  box-shadow: -0 -20px rgb(209, 229, 248);
+  box-shadow: -0 -5px rgb(209, 229, 248);
 }
 .video {
   float: left;
@@ -156,6 +156,7 @@ h1 {
 .ts h1 {
   color: #14addc;
   text-transform: uppercase;
+  margin-top: 3%;
   padding-bottom: 65px;
   letter-spacing: 5px;
 }
@@ -211,4 +212,42 @@ h1 {
 }
 .spot:hover .spot_photo:not(:hover) {
   transform: scale(0.9);
+}
+#boxes {
+  font-family: serif;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  display: flex;
+}
+
+.events {
+  width: 1100px;
+  height: auto;
+  margin-top: 50px;
+  flex-flow: row wrap;
+  display: flex;
+}
+
+.box {
+  margin: 12px;
+  width: 500px;
+  height: 515px;
+  box-shadow: -1px 0 10px #000000;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#boxes img {
+  width: 500px;
+}
+#boxes p {
+  line-height: 1.3em;
+  font-size: 14px;
+}
+h5 {
+  font-size: 40px;
+  padding: 30px;
+  background: linear-gradient(rgb(228, 225, 225), rgb(209, 229, 248));
 }
