@@ -87,13 +87,13 @@ h3 {
 }
 
 .cover {
-  background: url(../image/cover.jpg) no-repeat center center/cover;
-  height: 780px;
-  background-color: rgrgb(209, 229, 248);
+  max-width: auto;
+  height: auto;
+  width: 100%;
   margin-top: 5px;
 }
 .video-content {
-  max-width: 1100;
+  max-width: auto;
   width: 100%;
   background: linear-gradient(rgb(228, 225, 225), rgb(209, 229, 248));
   margin-top: 5px;
@@ -101,10 +101,8 @@ h3 {
   box-shadow: -0 -5px rgb(209, 229, 248);
 }
 .video {
-  float: left;
-  height: 470px;
-  max-width: 1100;
-  width: 60%;
+  max-width: auto;
+  width: 100%;
 }
 
 img {
@@ -114,19 +112,7 @@ h1 {
   float: left;
   clear: both;
 }
-.lu {
-  margin-left: 940px;
-  line-height: 0.5em;
-}
-#blue {
-  color: blue;
-}
 
-.ilyelyu {
-  width: 350px;
-  margin-left: 95px;
-  margin-top: 32px;
-}
 .video-content h1 {
   background: linear-gradient(rgb(228, 225, 225), rgb(209, 229, 248));
   padding: 5px 19.95rem;
@@ -142,7 +128,8 @@ h1 {
   padding: 0 20px;
 }
 .spot {
-  width: auto;
+  max-width: auto;
+  width: 100%;
   margin: 0 auto;
 }
 .spot_photo {
@@ -152,6 +139,7 @@ h1 {
   position: absolute;
   z-index: 10;
   transition: all 0.2s;
+  max-width: auto;
 }
 .ts h1 {
   color: #14addc;
@@ -162,46 +150,46 @@ h1 {
 }
 .spot_photo-1 {
   margin-top: 10%;
-  left: 1.1%;
+  left: 1%;
   z-index: 1;
 }
 .spot_photo-2 {
   margin-top: 13%;
-  left: 9.8%;
+  left: 8%;
   z-index: 2;
 }
 .spot_photo-3 {
   margin-top: 16%;
-  left: 18.5%;
+  left: 15%;
   z-index: 3;
 }
 .spot_photo-4 {
   margin-top: 19%;
-  left: 27.2%;
+  left: 22%;
   z-index: 4;
 }
 .spot_photo-5 {
   margin-top: 22%;
-  left: 35.9%;
+  left: 29%;
 }
 .spot_photo-6 {
   margin-top: 19%;
-  left: 44.6%;
+  left: 36%;
   z-index: 4;
 }
 .spot_photo-7 {
   margin-top: 16%;
-  left: 53.3%;
+  left: 43%;
   z-index: 3;
 }
 .spot_photo-8 {
   margin-top: 13%;
-  left: 62%;
+  left: 50%;
   z-index: 2;
 }
 .spot_photo-9 {
   margin-top: 10%;
-  left: 70.7%;
+  left: 57%;
   z-index: 1;
 }
 .spot_photo:hover {
@@ -222,7 +210,8 @@ h1 {
 }
 
 .events {
-  width: 1100px;
+  width: auto;
+  /* max-width: auto; */
   height: auto;
   margin-top: 50px;
   flex-flow: row wrap;
@@ -332,7 +321,22 @@ h5 {
   background-color: #3f3f3f;
 }
 @media all and (max-width: 3000px){
-  nav ul, header, section, footer, img{
+  nav ul, header, section, footer, img, div{
     display: block;
   }
+  .spot_photo{
+    display: block;
+  }
+  footer{
+    text-align: center;
+    height: auto;
+  }
+  footer .social-links{
+    text-align: center;
+    height: auto;
+}
+footer .quick-links{
+  text-align: center;
+  height: auto;
+}
 }
