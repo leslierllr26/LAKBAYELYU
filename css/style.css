@@ -131,6 +131,7 @@ h1 {
   max-width: auto;
   width: 100%;
   margin: 0 auto;
+  display: block;
 }
 .spot_photo {
   width: 400px;
@@ -155,41 +156,41 @@ h1 {
 }
 .spot_photo-2 {
   margin-top: 13%;
-  left: 8%;
+  left: 10%;
   z-index: 2;
 }
 .spot_photo-3 {
   margin-top: 16%;
-  left: 15%;
+  left: 19%;
   z-index: 3;
 }
 .spot_photo-4 {
   margin-top: 19%;
-  left: 22%;
+  left: 28%;
   z-index: 4;
 }
 .spot_photo-5 {
   margin-top: 22%;
-  left: 29%;
+  left: 37%;
 }
 .spot_photo-6 {
   margin-top: 19%;
-  left: 36%;
+  left: 46%;
   z-index: 4;
 }
 .spot_photo-7 {
   margin-top: 16%;
-  left: 43%;
+  left: 55%;
   z-index: 3;
 }
 .spot_photo-8 {
   margin-top: 13%;
-  left: 50%;
+  left: 64%;
   z-index: 2;
 }
 .spot_photo-9 {
   margin-top: 10%;
-  left: 57%;
+  left: 73%;
   z-index: 1;
 }
 .spot_photo:hover {
@@ -211,7 +212,7 @@ h1 {
 
 .events {
   width: auto;
-  /* max-width: auto; */
+  max-width: 1100px;
   height: auto;
   margin-top: 50px;
   flex-flow: row wrap;
@@ -229,7 +230,7 @@ h1 {
   transition: all 0.2s;
 }
 .box:hover {
-  outline: 5px solid #fff;
+  outline: 1px dotted rgb(8, 8, 8);
   transform: scale(1.05) translateY(-20px);
   z-index: 20;
   box-shadow: -10px -10px 25px lightblue;
