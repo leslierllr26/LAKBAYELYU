@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="about.html" />
+    <title>Lakbay &copy; Elyu</title>
 </head>
 <style>
 
@@ -18,6 +23,80 @@ html body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   line-height: 1.5em; /* 1em = 2inches */
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  padding: 10px 0;
+}
+/* p {
+  margin: 10px;
+} */
+/* Apply some responsive rule */
+.container {
+  margin: auto;
+  max-width: auto;
+  overflow: auto;
+  padding: 0 20px;
+}
+/* Navigation */
+#navbar {
+  background: white;
+  overflow: hidden;
+  color: rgb(2, 2, 2);
+  box-shadow: 5px 5px 10px gray;
+}
+#republic {
+  overflow: hidden;
+  color: rgb(2, 2, 2);
+}
+#republic .logo {
+  width: 70px;
+  float: left;
+}
+.rp {
+  margin-left: 100px;
+  line-height: 1.2em;
+}
+#republic .top {
+  margin-top: 15px;
+  text-decoration-line: underline;
+}
+#navbar a {
+  color: rgb(1, 1, 153);
+}
+/* removing the bullets in the list */
+#navbar ul {
+  list-style: none;
+  /* float: right; */
+}
+/* float list items in the left to have them horizontally align */
+#navbar ul li {
+  float: right;
+}
+/* convert anchor link to block elements to appl some padding */
+#navbar ul li a {
+  display: block;
+  padding: 31px 20px;
+}
+#navbar h1 {
+  float: left;
+  padding-top: 20px;
+}
+
+/* Navigation using pseudo selector */
+#navbar ul li a:hover {
+  background: rgb(248, 248, 177);
+  color: maroon;
+}
+
+#navbar ul li a.active {
+  background: rgba(50, 51, 48, 0.1);
 }
 
 #hero {
@@ -69,19 +148,155 @@ html body {
     font-weight: bolder;
     color: darkblue;
 }
+
+.inner-footer{
+  margin: 0;
+  padding: 0;
+  background-color: #272727;
+}
+
+.social-links{
+  display: flex;
+}
+
+.social-links ul{
+  padding: 10px;
+  display: flex;
+  width: 300px;
+  height: 30px;
+  margin: auto;
+}
+
+.social-items{
+  list-style: none;
+}
+
+.social-items a{
+  padding: 10px 20px;
+  font-size: 35px;
+  color: #6cccc6;
+  transition: all .25s;
+}
+
+.social-items a:hover{
+    color: #01887f; 
+}
+
+.quick-links{
+  display: flex;
+  width: 450px;
+  height: 70px;
+  margin: auto;
+}
+
+.quick-links ul{
+  display: flex;
+}
+
+.quick-items{
+  list-style: none;
+  padding-top: 30px;
+}
+
+.quick-items a{
+  text-decoration: none;
+  padding: 0px 15px;
+  font-size: 15px;
+  color: #fff;
+  transition: all .25s;
+}
+
+.quick-items a:hover{
+  color: #6cccc6;
+}
+
+.outer-footer{
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+  background-color: #3f3f3f;
+}
+
+@media all and (max-width: 3000px) {
+  img, nav, footer, header, section {
+    display: block;
+  } 
+}
 </style>
 <body>
     <header>
+        <nav id="navbar">
+          <div class="container">
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-rev"></i> &nbsp; Reviews</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-viruses"></i> &nbsp; Covid-19 Awareness</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="far fa-calendar-alt"></i> &nbsp; Events</a>
+              </li>
+              <li>
+                <a href="./about.html"
+                  ><i class="fas fa-info"></i> &nbsp; About</a
+                >
+              </li>
+              <li>
+                <a class="active" href="index.html"
+                  ><i class="fas fa-home"></i> &nbsp; Home</a
+                >
+              </li>
+            </ul>
+            <div id="republic">
+              <img class="logo" src="./image/logo.jpg" alt="" />
+              <h4 class="rp top">REPUBLIC OF THE PHILIPPINES</h4>
+              <h4 class="rp">Province of La Union</h4>
+              <h4 class="rp">Lakbay Elyu</h4>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <header>
         <section id="hero">
+          <div class="container"> 
             <div class="hero-content">
                 <h1> Looking for joy?</h1>
                 <p class="text-lead">You’re in the right place</p>
             </div>
+          </div>
         </section>
     </header>
     <div id="lakbay">
         <p> <span class="elyu"> Lakbay Elyu </span> presents viewers with an immersive experience of an activity, location, or destination through the use of technology. Lakbay Elyu Virtual tour offers different types spectacular virtual reality, still images, video, audio, narration, interactivity, and other multimedia formats to provide a great experience of a destination all over La Union.
         </p>
     </div>
+    <footer class="footer">
+        <div class="inner-footer">
+          <div class="social-links">
+            <ul>
+              <li class="social-items"><a href="https://www.facebook.com/profile.php?id=100074916883855"><i class="fab fa-facebook"></i></a></li>
+              <li class="social-items"><a href="https://twitter.com/LuElyu"><i class="fab fa-twitter-square"></i></a></li>
+              <li class="social-items"><a href="https://www.instagram.com/lakbay.elyu/"><i class="fab fa-instagram"></i></a></li>
+              <li class="social-items"><a href="https://mail.google.com/mail/u/0/?tab=rm&fbclid=IwAR1eAxV9WYkbN6k7ipXOjQ9lhRwsG1RngwKbedXoHaEGVF4jRa_sY4M0DYY#search/elyu402%40gmail.com"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+          </div>
+          <div class="quick-links">
+            <ul>
+              <li class="quick-items"><a href="index.html">Home</a></li>
+              <li class="quick-items"><a href="tutorial.html">Tutorials</a></li>
+              <li class="quick-items"><a href="services.html">Services</a></li>
+              <li class="quick-items"><a href="about.html">About Us</a></li>
+              <li class="quick-items"><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="outer-footer">
+          Copyright &copy; Lakbay Elyu 2021 All Rights Reserved
+        </div>
+      </footer>
 </body>
 </html>
